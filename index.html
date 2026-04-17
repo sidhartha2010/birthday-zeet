@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Zeet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-text">Preparing Something Special...</div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Happy Birthday Zeet</h1>
+    <p>For one of the realest friends out there ✨</p>
+  </section>
+
+  <!-- Gift -->
+  <section class="gift-section">
+    <div class="gift-box" onclick="unlockGift()">🎁</div>
+    <p>Tap to unlock</p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery hidden" id="gallery">
+    <h2>Memory Gallery</h2>
+    <div class="photos">
+      <img src="photo1.jpg">
+      <img src="photo2.jpg">
+      <img src="photo3.jpg">
+      <img src="photo4.jpg">
+      <img src="photo5.jpg">
+      <img src="photo6.jpg">
+    </div>
+  </section>
+
+  <!-- Countdown -->
+  <section class="countdown-section">
+    <h2>Until Next Birthday</h2>
+    <div id="countdown"></div>
+  </section>
+
+  <!-- Secret -->
+  <section class="secret-section">
+    <input type="password" id="secretCode" placeholder="Enter Code">
+    <button onclick="unlockLetter()">Unlock</button>
+    <div id="secretLetter" class="hidden">
+      💛 You matter more than you know.
+    </div>
+  </section>
+
+  <!-- Message -->
+  <section class="message">
+    Zeet, you’re one of those rare people who make life better just by existing. Happy Birthday legend 🎉
+  </section>
+
+  <!-- Music -->
+  <div class="music-player">
+    <audio controls autoplay loop>
+      <source src="music.mp3">
+    </audio>
+  </div>
+
+  <canvas id="fireworks"></canvas>
+
+  <script src="script.js"></script>
+</body>
+        </html>
